@@ -3,7 +3,6 @@ import { menu, woobox, laptop } from "../assets/index";
 import Footer from './Footer';
 import Product from './Product';
 import { Link } from "react-router-dom";
-import Sign from './Sign';
 
 
 const Home = () => {
@@ -13,9 +12,22 @@ const Home = () => {
           <div className="logo">
             <img src={woobox} alt="woobox logo" />
           </div>
+
           <div className="hamburger">
-            <a href="/Sign"> <img src={menu} alt="hamburger" />  </a> 
+            <Link to="/Sign"> <img src={menu} alt="hamburger" />  </Link> 
           </div>
+          
+          <div className="nav-links">
+            <ul>
+              <li><a href="">Experiences</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Blog</a></li>
+              <li><Link to="/Sign">Sing in</Link></li>
+              <li><Link to="/Sign">Sing up</Link></li>
+            </ul>
+          </div>
+         
         </div>
 
         <div className="hero"   >

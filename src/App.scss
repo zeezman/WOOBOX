@@ -28,7 +28,44 @@
     }
   }
 
+ .nav-links {
+
+    ul{
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li{
+        list-style-type: none;
+        padding: 20px;
+      
+        a{
+          display: block;
+          text-decoration: none;
+          font-size: 1rem;
+          cursor: pointer;
+          color: hsl(0, 3%, 72%);
+          &:hover{
+            color: hsl(0, 0%, 100%);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
   .hamburger{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
     width: 60px;
     height: 0;
     background-color: green;
@@ -38,31 +75,18 @@
       height: 30px;
     }
   }
-
-  // .links{
-  //   width: 40%; 
-
-  //   ul{
-  //     display: flex;
-  //     margin: 0;
-  //     padding: 30px 0;
-
-  //     li{
-  //       list-style-type: none;
-  //       padding: 20px;
-      
-  //       a{
-  //         font-size: 1rem;
-  //         cursor: pointer;
-  //         color: hsl(0, 3%, 72%);
-  //         &:hover{
-  //           color: hsl(0, 0%, 100%);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-}
+ 
+} 
+@media (max-width: 500px) {
+    .hamburger{
+      display: flex;
+    }
+    
+    .nav-links{
+      display: none;
+      width: 100%;
+    }
+  }
 
 .hero{
   background-image: url("./components/large\ bg.png");
@@ -105,7 +129,7 @@
     background-image: url("./components/new\ bg.png");
 
     img{
-      width: 450px;
+      width: 400px;
       height: 300px;
     }
   }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { google, profile, icons } from "../assets/index";
+import { Link } from 'react-router-dom';
 
 const Sign = () => {
   return (
@@ -21,7 +22,7 @@ const Sign = () => {
               fontSize: 16, paddingLeft: 0, marginLeft: -180 }}
              />
           </div>
-            <div ><input type="submit" id="button2" value="Next" /></div>
+            <Link to="/" ><input type="submit" id="button2" value="Next" /></Link>
             <div id="info3"><a href="#">Need help?</a></div>
         </div>
         <div id="info4"> <a href="#">Create account</a></div>
